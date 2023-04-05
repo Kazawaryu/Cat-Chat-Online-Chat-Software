@@ -6,7 +6,7 @@ If you like this project, please give me a ⭐, it does mean a lot for me🙏.
 
 ## 0.	Software Introduction
 
-Cat Chat is an online chat software a reverses project for QQ Chat and uses some Mahjong Soul materials. The client and server are written in Java, JDBC connects to the Postgre database, JavaFX writes the frontend interface, and CSS is used for interface beautification. Cat Chat supports personal chat and group chat, and the front-end interface is completely written in JavaFX (FX8), providing exquisite front-end interfaces and expanded displays (user online status, message sending and receiving status, dynamic components, flat bubbles), you can hardly notice any traces of JavaFX. Of course, Cat Chat still has some dynamic displays that need to be beautified, such as the dynamic switching function of the friend bar and group chat bar, but for now, I think Cat Chat has reached a considerable level of flatness and simplicity.
+Cat Chat is an online chat software, a reverses project for QQ Chat. The client and server are written in Java, JDBC connects to the Postgre database, JavaFX writes the frontend interface, and CSS is used for interface beautification. Cat Chat supports personal chat and group chat, and the front-end interface is completely written in JavaFX (FX8), providing exquisite front-end interfaces and expanded displays (user online status, message sending and receiving status, dynamic components, flat bubbles), you can hardly notice any traces of JavaFX. Of course, Cat Chat still has some dynamic displays that need to be beautified, such as the dynamic switching function of the friend bar and group chat bar, but for now, I think Cat Chat has reached a considerable level of flatness and simplicity.
 
 
 
