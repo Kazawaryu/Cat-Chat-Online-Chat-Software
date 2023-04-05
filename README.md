@@ -41,7 +41,7 @@ For sudden crashes of the client and server and other situations, Cat Chat has h
 ## 2.	Code Details
 
 ### 2.1	Project Structure
-
+```
 Cat_Chat
 ├─.mvn
 │  └─wrapper
@@ -67,7 +67,7 @@ Cat_Chat
     │  └─images
     └─generated-sources
         └─annotations
-
+```
 
 
 ### 2.2	Listener handle
