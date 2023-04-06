@@ -14,7 +14,7 @@ Cat Chat is an online chat software, a reverses project for QQ Chat. The client 
 
 ### 1.1	login interface
 
-To use Cat Chat, you must first log in to your account and enter your user account and password on the login page for comparison and verification with the database (of course, this part of the code has security risks, such as directly obtaining the real password of a certain account in the database. You may have better ideas and code). After successful verification, you will enter the chat interface. I have applied some dynamic components based only on JavaFX, such as dynamic buttons with underlines and dynamic buttons with automatic filling, which are controlled and beautified by CSS.
+To use Cat Chat, you must first log in to your account, enter your user account and password on the login page for comparison, they will be verified with the database (this part of the code might has security risks, such as directly obtaining the real password of a certain account in the database). After successful verification, you will enter the chat interface. I have applied some dynamic components based only on JavaFX, such as dynamic buttons with underlines and dynamic buttons with automatic filling, which are controlled and beautified by CSS.
 
 <div align="center">
   <img src="https://github.com/Kazawaryu/Cat-Chat-Online-Chat-Software/blob/main/reportImages/Login.gif" style="zoom: 50%;" />
