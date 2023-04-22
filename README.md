@@ -113,8 +113,8 @@ Due to non-disclosure agreement, I will not provide online experience and open r
 
 - [x] Dynamic Components and Flat UI
 - [x] Stable connection and safe exit in abnormal state
-- [ ] Emoticons and file transfer
-- [ ] Dynamic user information display switching
+- [x] Emoticons and file transfer
+- [x] Dynamic user information display switching
 - [ ] Server thread pool and Socket pool
 - [ ] Communication Encryption Algorithm Like RSA Algorithm
 - [ ] Open customized user information modification
