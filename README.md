@@ -42,6 +42,17 @@ For sudden crashes of the client and server and other situations, Cat Chat has h
   <img src="https://github.com/Kazawaryu/Cat-Chat-Online-Chat-Software/blob/main/reportImages/exception.png">
 </div>
 
+### 1.4 Update Version 1.1 User Interface
+
+Like Mac OS, Cat Chat update the stage style of user interface, it provides a plat circle button and more plat frame.
+
+
+
+### 1.5 User Register Function Interface
+
+
+
+
 ## 2.	Code Details
 
 ### 2.1	Project Structure
@@ -110,6 +121,7 @@ It is obvious that the client and server need to establish reliable communicatio
 ## 3.	Work and Schedule
 
 Due to non-disclosure agreement, I will not provide online experience and open registration at present, and will not open source this project before April 28th. As of now (April 7), Cat Chat has realized all the basic functions of a lightweight online chat software, and may further optimize and improve the following parts in the future.
+
 
 - [x] Dynamic Components and Flat UI
 - [x] Stable connection and safe exit in abnormal state
