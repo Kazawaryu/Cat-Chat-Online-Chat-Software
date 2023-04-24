@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXAvatar?>
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import com.leewyatt.rxcontrols.controls.RXLineButton?>
+<?import com.leewyatt.rxcontrols.controls.RXPasswordField?>
+<?import com.leewyatt.rxcontrols.controls.RXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ghosnp.catchat.frontend.LoginFrame">
+   <children>
+      <Pane layoutX="10.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#handleMouseDragged" onMousePressed="#handleMousePressed" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #EBEBEB;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="85.0" layoutX="203.0" layoutY="307.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/catfood-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <GridPane cache="true" cacheHint="QUALITY" layoutX="42.0" layoutY="208.0" prefHeight="90.0" prefWidth="215.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.79998779296875" minWidth="10.0" prefWidth="67.20001220703125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.79999542236328" minWidth="10.0" prefWidth="133.59998779296876" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="53.599981689453124" minHeight="10.0" prefHeight="44.80000610351563" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="82.4" minHeight="10.0" prefHeight="43.19999389648437" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account" textOrigin="TOP">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <RXPasswordField fx:id="LoginPassword" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RXPasswordField>
+                        <Line endX="31.692901611328125" startX="-100.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <RXTextField fx:id="LoginAccount" buttonDisplayMode="HIDE" prefHeight="23.0" prefWidth="162.0" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RXTextField>
+                        <Line endX="31.692901611328125" startX="-100.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <RXAvatar fx:id="LoginAvator" layoutX="100.0" layoutY="45.0">
+               <image>
+                  <Image url="@../../../images/cuteYichi.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </RXAvatar>
+            <RXFillButton animationTime="100.0ms" layoutX="73.0" layoutY="314.0" onMouseClicked="#ClickLoginButton" prefHeight="35.0" prefWidth="160.0" style="-fx-pref-height: 35;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css" text="Login in">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RXFillButton>
+            <Button fx:id="CloseButton" layoutX="273.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text=" ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <RXLineButton fx:id="UserName" layoutX="108.0" layoutY="160.0" prefHeight="25.0" prefWidth="85.0" text="Cat Chat">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RXLineButton>
+            <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="265.0" layoutY="18.0" onMouseClicked="#CloseMainStage" prefHeight="20.0" prefWidth="20.0" styleClass="closeBtn" stylesheets="@../../../css/pane_buttons.css" text=" " />
+            <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="205.0" layoutY="18.0" onMouseClicked="#MinimizeMainStage" prefHeight="20.0" prefWidth="20.0" styleClass="minimizeBtn" stylesheets="@../../../css/pane_buttons.css" text=" " />
+            <Pane fx:id="RegisterPane" layoutX="22.0" layoutY="56.0" prefHeight="300.0" prefWidth="260.0" style="-fx-background-color: #EBEBEB;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css" visible="false">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="232.0" layoutY="14.0" onMouseClicked="#CloseRegisterStage" prefHeight="20.0" prefWidth="20.0" styleClass="closeBtn" stylesheets="@../../../css/pane_buttons.css" text=" " />
+                  <RXFillButton animationTime="100.0ms" layoutX="64.0" layoutY="251.0" onMouseClicked="#ClickRGAccountButton" prefHeight="26.0" prefWidth="133.0" style="-fx-pref-height: 35;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css" text="Register">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RXFillButton>
+                  <GridPane cache="true" cacheHint="QUALITY" layoutX="23.0" layoutY="63.0" prefHeight="174.0" prefWidth="215.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.79998779296875" minWidth="10.0" prefWidth="67.20001220703125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.79999542236328" minWidth="10.0" prefWidth="133.59998779296876" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="53.599981689453124" minHeight="10.0" prefHeight="44.80000610351563" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="82.4" minHeight="10.0" prefHeight="43.19999389648437" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="82.4" minHeight="10.0" prefHeight="43.19999389648437" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="82.4" minHeight="10.0" prefHeight="43.19999389648437" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account" textOrigin="TOP">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <RXPasswordField fx:id="RegPassword" style="-fx-background-color: transparent;">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </RXPasswordField>
+                              <Line endX="31.692901611328125" startX="-100.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <children>
+                              <RXTextField fx:id="RegAccount" buttonDisplayMode="HIDE" prefHeight="23.0" prefWidth="162.0" style="-fx-background-color: transparent;">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </RXTextField>
+                              <Line endX="31.692901611328125" startX="-100.0" />
+                           </children>
+                        </VBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CdKey" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <RXTextField fx:id="RegName" buttonDisplayMode="HIDE" prefHeight="23.0" prefWidth="162.0" style="-fx-background-color: transparent;">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </RXTextField>
+                              <Line endX="31.692901611328125" startX="-100.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <RXTextField fx:id="InvitationCode" buttonDisplayMode="HIDE" prefHeight="23.0" prefWidth="162.0" style="-fx-background-color: transparent;">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </RXTextField>
+                              <Line endX="31.692901611328125" startX="-100.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <Text layoutX="51.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's cat chat!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="90.0" fitWidth="85.0" layoutX="166.0" layoutY="209.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/catfood-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="235.0" layoutY="18.0" onMouseClicked="#ClickRegisterButton" prefHeight="20.0" prefWidth="20.0" styleClass="helpBtn" stylesheets="@../../../css/pane_buttons.css" text=" " />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</Pane>

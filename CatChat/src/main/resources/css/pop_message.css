@@ -1,0 +1,5 @@
+.message {
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: #1e90ff;
+}

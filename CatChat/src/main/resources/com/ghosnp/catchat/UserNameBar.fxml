@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXAvatar?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ghosnp.catchat.testAssembly.UserNameBar">
+   <children>
+      <ScrollPane fx:id="ScrollPaneForUsers" layoutX="52.0" layoutY="60.0" prefHeight="480.0" prefWidth="278.0" stylesheets="@../../../css/pane_textarea.css">
+         <content>
+            <FlowPane fx:id="FlowPaneForUsers" prefHeight="478.0" prefWidth="280.0">
+               <children>
+                  <VBox prefHeight="62.0" prefWidth="280.0">
+                     <children>
+                        <HBox onMouseClicked="#TestClickFriend" prefHeight="60.0" prefWidth="270.0">
+                           <children>
+                              <Pane prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <RXAvatar layoutX="4.0" layoutY="-1.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+                                       <image>
+                                          <Image url="@../../../AvatarIcon/9011.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                       </effect>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </RXAvatar>
+                                    <Circle fill="#1fff69" layoutX="54.0" layoutY="49.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <Text layoutX="15.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miki Nikaidou">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="15.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12114514" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Line endX="250.0" fill="#798a8a67" stroke="#798a8a66" strokeWidth="0.6">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Line>
+                     </children>
+                  </VBox>
+               </children>
+            </FlowPane>
+         </content>
+         <styleClass>
+            <String fx:value="fix-scroll-pane" />
+            <String fx:value="scroll-bar" />
+         </styleClass>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXAvatar?>
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import com.leewyatt.rxcontrols.controls.RXLineButton?>
+<?import com.leewyatt.rxcontrols.controls.RXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ghosnp.catchat.frontend.ClientMainFrame">
+   <children>
+      <Pane fx:id="MainPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css">
+         <children>
+            <Pane layoutX="260.0" layoutY="500.0" prefHeight="100.0" prefWidth="50.0" style="-fx-background-color: #EBEBEB;" />
+            <Pane layoutY="80.0" prefHeight="100.0" prefWidth="50.0" style="-fx-background-color: #EBEBEB;" />
+            <Pane layoutX="260.0" prefHeight="100.0" prefWidth="50.0" style="-fx-background-color: #EBEBEB;" />
+            <Pane layoutY="20.0" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #1e90ff;" />
+            <HBox prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: #1e90ff;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css">
+               <children>
+                  <Pane prefHeight="80.0" prefWidth="75.0">
+                     <children>
+                        <RXAvatar fx:id="AvatorUser" arcHeight="35.0" arcWidth="35.0" layoutX="-2.0" layoutY="-5.0" prefHeight="60.0" prefWidth="60.0" shapeType="SQUARE">
+                           <image>
+                              <Image url="@../../../images/cuteYichi.jpg" />
+                           </image>
+                           <padding>
+                              <Insets left="5.0" top="15.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </RXAvatar>
+                        <Circle fx:id="StageUser" fill="#1fff69" layoutX="60.0" layoutY="65.0" radius="8.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <Pane prefHeight="80.0" prefWidth="205.0">
+                     <children>
+                        <Pane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #1e90ff;" />
+                        <Text fx:id="TextUserName" fill="WHITE" layoutX="15.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User_name">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="TextSign" fill="WHITE" layoutX="15.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I'm test text">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <RXLineButton layoutX="150.0" layoutY="5.0" onMouseClicked="#ChangeNameBar2Users" prefHeight="40.0" prefWidth="40.0" text="👤" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </RXLineButton>
+                        <RXLineButton layoutX="150.0" layoutY="35.0" onMouseClicked="#ChangeNameBar2Groups" prefHeight="40.0" prefWidth="40.0" text="👥" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </RXLineButton>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="280.0" onMouseDragged="#handleMouseDragged" onMousePressed="#handleMousePressed" prefHeight="600.0" prefWidth="520.0" style="-fx-background-color: #EBEBEB;" stylesheets="@../../../css/pane_textarea.css">
+               <children>
+                  <TextArea fx:id="InputFile" layoutX="25.0" layoutY="460.0" prefHeight="80.0" prefWidth="470.0" style="-fx-background-color: transparent;" stylesheets="@../../../css/pane_textarea.css" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="customerT-text-area" />
+                        <String fx:value="scroll-bar" />
+                     </styleClass>
+                  </TextArea>
+                  <RXFillButton fx:id="ButtonSendMessage" animationTime="100.0ms" layoutX="325.0" layoutY="555.0" onMouseClicked="#SendMessage" prefHeight="30.0" prefWidth="170.0" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css" text="Send Message">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RXFillButton>
+                  <Text fx:id="ChattingUser" layoutX="25.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to CatChat">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ChattingSign" layoutX="25.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Line endX="420.0" layoutX="100.0" layoutY="420.0" startX="-100.0" stroke="#7a8b8b" />
+                  <Line endX="420.0" layoutX="100.0" layoutY="80.0" startX="-100.0" stroke="#7a8b8b" />
+                  <RXLineButton layoutX="25.0" layoutY="425.0" onMouseClicked="#ShowFileTransfer" prefHeight="30.0" prefWidth="30.0" text="📁">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RXLineButton>
+                  <RXLineButton layoutX="65.0" layoutY="425.0" prefHeight="30.0" prefWidth="30.0" text="🎥">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RXLineButton>
+                  <RXLineButton layoutX="105.0" layoutY="425.0" prefHeight="30.0" prefWidth="30.0" text="🎹">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RXLineButton>
+                  <RXLineButton layoutX="145.0" layoutY="425.0" onMouseClicked="#ShowHistory" prefHeight="30.0" prefWidth="30.0" text="💬">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RXLineButton>
+                  <Text fx:id="ChattingAccount" layoutX="392.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="490.0" layoutY="15.0" onMouseClicked="#CloseMainStage" prefHeight="20.0" prefWidth="20.0" styleClass="closeBtn" text=" " />
+                  <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="460.0" layoutY="15.0" onMouseClicked="#HelpMainStage" prefHeight="20.0" prefWidth="20.0" styleClass="helpBtn" text=" " />
+                  <RXFillButton animationTime="100.0ms" fillType="CIRCLE_TO_SIDE" hoverTextFill="#2a09a1" layoutX="430.0" layoutY="15.0" onMouseClicked="#MinimizeMainStage" prefHeight="20.0" prefWidth="20.0" styleClass="minimizeBtn" text=" " />
+                  <ImageView fitHeight="90.0" fitWidth="85.0" layoutX="418.0" layoutY="433.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/catfood-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <styleClass>
+                  <String fx:value="scroll-pane" />
+                  <String fx:value="btn1" />
+               </styleClass>
+            </Pane>
+            <Pane layoutX="280.0" layoutY="80.0" prefHeight="340.0" prefWidth="520.0" style="-fx-background-color: #EBEBEB;">
+               <children>
+                  <ScrollPane fx:id="ScrollMessagePane" prefHeight="340.0" prefWidth="520.0" style="-fx-background-color: transparent;" stylesheets="@../../../css/pane_textarea.css">
+                     <content>
+                        <FlowPane fx:id="FlowInfoPane" prefHeight="338.0" prefWidth="520.0" style="-fx-background-color: #EBEBEB;">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView disable="true" fitHeight="200.0" fitWidth="200.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/catfood-removebg-preview.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <FlowPane.margin>
+                                    <Insets left="150.0" top="70.0" />
+                                 </FlowPane.margin>
+                              </Pane>
+                           </children>
+                        </FlowPane>
+                     </content>
+                     <styleClass>
+                        <String fx:value="scroll-bar" />
+                        <String fx:value="fix-scroll-pane" />
+                     </styleClass>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane layoutY="80.0" prefHeight="520.0" prefWidth="280.0" style="-fx-background-color: #EBEBEB;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css">
+               <children>
+                  <ScrollPane fx:id="ScrollPaneForUsers" layoutX="1.0" layoutY="40.0" prefHeight="466.0" prefWidth="278.0" style="-fx-background-color: rgba(255,255,255,0);" stylesheets="@../../../css/pane_textarea.css">
+                     <content>
+                        <FlowPane fx:id="FlowPaneForUsers" prefHeight="450.0" prefWidth="280.0" style="-fx-background-color: #EBEBEB;">
+                           <children>
+                              <VBox prefHeight="62.0" prefWidth="280.0">
+                                 <children>
+                                    <Line endX="250.0" stroke="#798a8a67" strokeWidth="0.6">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </FlowPane>
+                     </content>
+                     <styleClass>
+                        <String fx:value="fix-scroll-pane" />
+                        <String fx:value="scroll-bar" />
+                     </styleClass>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane layoutY="80.0" prefHeight="40.0" prefWidth="280.0">
+               <children>
+                  <RXTextField fx:id="SearchText" alignment="CENTER" buttonDisplayMode="HIDE" layoutX="15.0" layoutY="5.0" prefHeight="30.0" prefWidth="210.0" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css" text="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RXTextField>
+                  <RXLineButton layoutX="230.0" onMouseClicked="#ChangeNameBar2Search" prefHeight="40.0" prefWidth="40.0" text="🔍">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RXLineButton>
+               </children>
+            </Pane>
+            <Line endX="-160.0" endY="450.0" layoutX="440.0" layoutY="150.0" startX="-160.0" startY="-150.0" stroke="#7a8b8b" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <RXLineButton layoutX="75.0" layoutY="595.0" prefHeight="16.0" text="C A T C H A T V E R S I O N 1 . 1" textFill="#00000073">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </RXLineButton>
+   </children>
+</Pane>

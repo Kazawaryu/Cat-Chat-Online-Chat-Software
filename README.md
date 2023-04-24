@@ -4,7 +4,7 @@ If you like this project, please give me a ⭐, it does mean a lot for me🙏.
 
 Now official version 1.1 has been released at Monday, April 24, 2023 (GMT+8).
 
-
+**Note** The CatChat is the client, and the MeoChat is the server, using Maven and Spring frameworks respectively. You may need to pay attention when deploying locally.
 
 ## 0.	Software Introduction
 

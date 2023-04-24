@@ -1,0 +1,110 @@
+.customerT-text-area {
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+    -fx-control-inner-background: #EBEBEB;
+    -fx-background-color: transparent, #EBEBEB, transparent, #EBEBEB;
+}
+
+.customerT-text-area .content {
+    -fx-background-color: transparent, #EBEBEB, transparent, #EBEBEB;
+}
+
+.customerT-text-area:focused {
+    -fx-background-color: transparent, #EBEBEB, transparent, #EBEBEB;
+}
+
+.fix-scroll-pane{
+    -fx-hbar-policy: never;
+}
+
+
+.scroll-bar:vertical .track{
+    -fx-background-color:transparent, #EBEBEB, transparent, #EBEBEB;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:vertical:hover .track,
+.scroll-bar:vertical:pressed .track{
+    -fx-background-color: derive(#434343,20%);
+    -fx-opacity: 0.2;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:vertical .thumb:pressed{
+    -fx-background-color: derive(black,50%);
+}
+
+.scroll-bar:vertical .increment-button:hover ,
+.scroll-bar:vertical .decrement-button:hover{
+    -fx-background-color:derive(gray,100%);
+    -fx-border-color:derive(gray,80%);
+    -fx-padding:10px;
+}
+
+
+.fix-bar:vertical .track{
+    -fx-background-color:transparent, #EBEBEB, transparent, #EBEBEB;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+.fix-bar:vertical .increment-button,
+.fix-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+
+.fix-bar:vertical .increment-arrow,
+.fix-bar:vertical .decrement-arrow{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+.fix-bar:vertical .thumb{
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.fix-bar:vertical:hover .track,
+.fix-bar:vertical:pressed .track{
+    -fx-background-color: derive(#434343,20%);
+    -fx-opacity: 0.2;
+    -fx-background-radius: 0em;
+}
+
+.fix-bar:vertical .thumb:hover,
+.fix-bar:vertical .thumb:pressed{
+    -fx-background-color: derive(black,50%);
+}
+
+.fix-bar:vertical .increment-button:hover ,
+.fix-bar:vertical .decrement-button:hover{
+    -fx-background-color:derive(gray,100%);
+    -fx-border-color:derive(gray,80%);
+    -fx-padding:10px;
+}

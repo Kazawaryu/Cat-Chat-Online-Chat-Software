@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXAvatar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ghosnp.catchat.testAssembly.PopMessage">
+    <children>
+      <ScrollPane layoutX="10.0" layoutY="82.0" prefHeight="200.0" prefWidth="580.0" styleClass="fix-scroll-pane" stylesheets="@../../../css/pane_textarea.css">
+         <content>
+            <FlowPane fx:id="FlowInfoPane" prefHeight="200.0" prefWidth="580.0">
+               <children>
+                  <HBox fx:id="PopHBox1" alignment="TOP_RIGHT" prefHeight="70.0" prefWidth="560.0">
+                     <children>
+                        <RXAvatar fx:id="PopAvatar1" prefHeight="50.0" prefWidth="50.0">
+                           <image>
+                              <Image url="@../../../images/cuteYichi.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </RXAvatar>
+                        <Pane fx:id="PopTextField1" prefHeight="45.0" prefWidth="170.0" style="-fx-background-color: #1e90ff;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css">
+                           <children>
+                              <Polygon fill="DODGERBLUE" layoutX="35.0" layoutY="45.0" points="-32.0, -12.800003051757812, -50.0, -22.000015258789062, -32.0, -32.80000305175781" stroke="TRANSPARENT" strokeType="INSIDE" />
+                              <TextFlow fx:id="PopTextFlow1" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="150.0">
+                                 <children>
+                                    <Text fx:id="PopText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a testing text.">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </TextFlow>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="PopHBox2" prefHeight="100.0" prefWidth="560.0">
+                     <children>
+                        <RXAvatar fx:id="PopAvatar2" prefHeight="50.0" prefWidth="50.0">
+                           <image>
+                              <Image url="@../../../images/cuteYichi.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </RXAvatar>
+                        <Pane fx:id="PopTextField2" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #1e90ff;" styleClass="btn1" stylesheets="@../../../css/pane_buttons.css">
+                           <children>
+                              <Polygon fill="DODGERBLUE" layoutX="35.0" layoutY="45.0" points="-32.0, -12.800003051757812, -50.0, -22.000015258789062, -32.0, -32.80000305175781" stroke="TRANSPARENT" strokeType="INSIDE" />
+                              <TextFlow fx:id="PopTextFlow2" layoutX="80.0" layoutY="30.0" prefHeight="30.0" prefWidth="110.0">
+                                 <children>
+                                    <Text fx:id="PopText2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a testing text." wrappingWidth="101.17010498046875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </TextFlow>
+                              <Text fx:id="PopText21" fill="WHITE" layoutX="80.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILE" wrappingWidth="101.17010498046875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="15.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="📄">
+                                 <font>
+                                    <Font size="52.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>
