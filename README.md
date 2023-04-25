@@ -37,8 +37,9 @@ For the event of receiving a friend message or group chat message, Cat Chat will
 
 For sudden crashes of the client and server and other situations, Cat Chat has handled various errors to achieve internal consistency and complete program operation. Local serialization of chat data can be performed here.
 
-<img src="G:\GitRepository\Cat-Chat-Online-Chat-Software\reportImages\exception.png" style="zoom: 67%;" />
-
+<div align=center>
+<img src="reportImages\exception.png" style="zoom: 80%;" />
+</div>
 
 
 
